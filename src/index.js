@@ -12,7 +12,11 @@ export class App extends React.Component {
      )
     }
 }
-DOM.createRoot(<App tab="home" />, container);
+
+ReactDom.render(
+    <App tab="home" />, container
+  )
+// DOM.createRoot(<App tab="home" />, container);
 // DOM.createRoot(
 //     document.getElementById('app')
 // );
