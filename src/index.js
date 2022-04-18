@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-class App extends React.Component {
+const container = document.getElementById('app');
+
+export class App extends React.Component {
     render() {
      return(
          <div>
@@ -10,6 +12,7 @@ class App extends React.Component {
      )
     }
 }
-ReactDom.render(
-    document.getElementById('app')
-);
+DOM.createRoot(<App tab="home" />, container);
+// DOM.createRoot(
+//     document.getElementById('app')
+// );
